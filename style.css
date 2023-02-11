@@ -1,0 +1,188 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.hero
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.highway
+{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+@keyframes highway
+{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+
+.city
+{
+    height: 360px;
+    width: 500%;
+    background-image: url(city2.webp);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+@keyframes city
+{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.car    
+{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.car img
+{
+    width: 100%;
+    animation: car 1s linear infinite;
+
+}
+@keyframes car
+{
+    100%{
+        transform: translateX(-1px);
+    }
+    50%{
+        transform: translateX(1px);
+    }
+   0%{
+        transform: translateX(-1px);
+    }
+}
+.wheel 
+{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.wheel img
+{
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+}
+
+.back-wheel
+{
+    left: -165px;
+    position: absolute;
+}
+.front-wheel
+{
+    left: 80px;
+    position: absolute;
+}
+
+@keyframes wheel
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.plane
+{
+    width: 400px;
+    left: 70%;
+    bottom: 380px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 1;
+}
+@keyframes plane
+{
+    100%{
+        transform: translateX(-1px);
+    }
+    50%{
+        transform: translateX(1px);
+    }
+   0%{
+        transform: translateX(-1px);
+    }
+}
+.plane img
+{
+    width: 30%;
+    animation: plane 1s linear infinite;
+
+}
+
+.plane2
+{
+    width: 400px;
+    left: 30%;
+    bottom: 550px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 0;
+}
+@keyframes plane
+{
+    100%{
+        transform: translateX(-1px);
+    }
+    50%{
+        transform: translateX(1px);
+    }
+   0%{
+        transform: translateX(-1px);
+    }
+}
+.plane2 img
+{
+    width: 30%;
+    animation: plane 1s linear infinite;
+
+}
+.credit
+{
+    width: 400px;
+   /* background-color: rgb(226, 149, 17);*/
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    
+    left: 85%;
+    bottom: 2px;
+    padding: 20px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
